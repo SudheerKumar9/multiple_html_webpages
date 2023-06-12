@@ -1,0 +1,121 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Java Jam Coffee</title>
+    <style> 
+        ol
+        {
+            list-style-type:none;
+            font-size: 35px;
+            text-align: center;
+            color:white;
+            
+        }
+        #one
+        {
+            width:170px;
+            background-color:black;
+            padding-bottom:240px;
+            padding-top:180px ;
+            padding-left:25px;
+            padding-right:25px;
+        }
+        #two
+        {
+            background-color:burlywood;
+            width:83.2%;
+            padding:20px;
+            margin-left:220px;
+            margin-top:-685px;
+        } 
+        h1
+        {
+            font-size:45px;
+        }
+        
+        #three
+        {
+            background-color:blanchedalmond;
+            width:83.2%;
+            padding-top:10px;
+            padding-right:0px;
+            padding-bottom:160px;
+            padding-left:40px;
+            margin-left:220px;
+
+        }
+        #four
+        {
+            background-color:burlywood;
+            width:100.4%;
+            padding:1px;
+            margin-left:0px;
+            margin-top:0px;
+
+        }
+        #five input
+        {
+            padding:2px;
+            margin: 3px;
+        }
+        table
+        {
+            padding:10px;
+            font-size:20px;
+        }
+        img
+        {
+            position:fixed;
+            top:50px;
+            left:60px;
+        }
+        body
+        {
+            font-family: "Comic Sans MS", sans-serif;
+        }
+
+
+            
+    </style>
+</head>
+<body>
+    <div id="one">
+        <img src="{% static 'images/javaj.png' %}">
+        <ol>
+            <li>Home</li>
+            <li>Menu</li>
+            <li>Music</li>
+            <li>Jobs</li>
+        </ol>
+    </div>
+    <div id="two"><h1>JavaJam Coffee House</h1></div>
+    <div id="three">
+        <h2>Jobs at JavaJam<h2>
+        <h3>Wants to work at JavaJam? Fill out the form below to start your application.
+            Required fields are marked with an asterik(*).</h3>
+        <form id="five">
+            <table>
+                <tr>
+                    <td align="right"><label>*Name:</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td align="right"><label>*E-mail:</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label>*Experience:</label></td>
+                    <td><textarea rows="4"cols="28"></textarea></td>
+                </tr>
+                <tr>
+                    <td align="right"><input type="submit" value="Apply Now"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div id="four"><h5 align="center"> copyright @ 2016 JavaJam Coffee House</h5></div>
+
+
+</body>
+</html>

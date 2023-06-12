@@ -1,0 +1,138 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Swiggy Cart</title>
+	<link rel="stylesheet"  href="{% static 'css/bootstrap.css' %}">
+	<link rel="stylesheet"  href="{% static 'css/mdb.css' %}">
+	<link rel="stylesheet"  href="{% static 'css/all.css' %}">
+	<style>
+		img
+		{
+			border-radius:100%!important;
+			height:70px!important;
+			width:70px!important;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col">
+				<h2 class="text-warning">Swiggy Cart:-</h2>
+				<p>Swiggy is an Indian online food ordering and delivery platform. Founded in 2014, Swiggy is based in Bangalore and operates in 500 Indian cities as of September 2021.Besides food delivery, Swiggy also provides on-demand grocery deliveries under the name Instamart, and a same-day package delivery service called Swiggy Genie.Swiggy has partnered with Burger King, McDonalds, Pizza Hut and many others to provide delivery services.It has also partnered with Google Local Guide to facilitate customer reviews,and with Sodexo to let customers pay through meal cards.Swiggy launched a digital wallet, Swiggy Money, in partnership with ICICI Bank, an Indian private sector bank.In January 2022, Swiggy and drone company ANRA Technologies began trialing drone deliveries.</p>
+				<button class="btn btn-warning btn-lg">Order Now</button>		
+			</div>
+		</div>
+	
+
+		<div class="row mt-4">
+			<div class="col">
+				<table class="table table-striped">
+					<thead class="bg-warning text-dark text-center">
+						<tr>
+							<th>S.NO</th>
+							<th>Image</th>
+							<th>Item Name</th>
+							<th>Price</th>
+							<th>Qty</th>
+							<th>Total Price</th>
+						</tr>
+					</thead>
+					<tbody class="table-warning text-center text-dark">
+						<tr>
+							<td>1</td>
+							<td><img src="{% static 'images/biriyani.png' %}"></td>
+							<td>Biriyani</td>
+							<td>299.00</td>
+							<td>
+								<i class="fa fa-minus-circle pr-2" id="dec"></i><span class="count"></span>
+								<i class="fa fa-plus-circle pr-2" id="inc"></i>
+							</td>
+							<td>299.00</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td><img src="{% static 'lollypop.jpg' %}"></td>
+							<td>Chicken LollyPop</td>
+							<td>299.00</td>
+							<td>
+								<i class="fa fa-minus-circle pr-2" id="dec"></i><span class="count"></span>
+								<i class="fa fa-plus-circle pr-2" id="inc"></i>
+							</td>
+							<td>299.00</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td><img src="{% static 'images/pizza.jpg' %}"></td>
+							<td>Pizza</td>
+							<td>299.00</td>
+							<td>
+								<i class="fa fa-minus-circle pr-2" id="dec" ></i><span class="count"></span>
+								<i class="fa fa-plus-circle pr-2" id="inc"></i>
+							</td>
+							<td>299.00</td>
+						</tr>
+					</tbody>
+				</table>	
+			</div>
+		</div>
+	</div>
+
+<script >
+	let incBtn=document.querySelector('#inc');
+	let decBtn=document.querySelector('#dec');
+	let displayTag=document.querySelector('.count');
+
+	let count=0;
+	displayTag.innerText=count;
+	incBtn.addEventListener('click',increment);
+	decBtn.addEventListener('click',decrement);
+
+	function increment()
+	{
+		count++;
+		displayTag.innerText=count;
+
+	}
+	function decrement()
+	{
+		if(count>0)
+		{
+			count--;
+			displayTag.innerText=count;
+		}
+		else
+		{
+			displayTag.innerText=1;
+		}
+	}
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Script Code -->
+<script src="../MDB/js/jquery.js"></script>
+<script src="../MDB/js/popper.js"></script>
+<script src="../MDB/js/bootstrap.js"></script>
+<script src="../MDB/js/mdb.js"></script>
+</body>
+</html>

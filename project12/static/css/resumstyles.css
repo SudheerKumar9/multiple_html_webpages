@@ -1,0 +1,101 @@
+
+*
+{
+	font-family: comic sans ms,sans-serif;
+}
+
+aside>img
+{
+	height:160px;
+	width:160px;
+	border-radius:100%;
+	margin-left: 20px;
+	margin-bottom: 30px;
+
+}
+body
+{
+	background-color:slategray;
+}
+aside
+{
+	background:linear-gradient(45deg,blue,lightcyan);
+	padding:16px;
+	width:200px;
+	height:400vh;
+	float:left;
+
+
+
+
+}
+aside>a 
+{
+ 	text-decoration:none;
+	color:white;
+	background-color:black;
+	padding:5px 10px;
+	display:block;
+	text-align:center;
+	margin-bottom:60px;
+	position: relative;
+
+}
+#one
+{
+	color: white;
+	background-color:royalblue;
+	padding:20px;
+	font-size:20px;
+	
+}
+#two
+{
+	background:linear-gradient(45deg,orange,lightseagreen,steelblue);
+	
+	margin-top: 20px;
+}
+#two>table>thead
+{
+	color:white;
+}
+#two>table>tbody
+{
+	color:black;
+}
+#three
+{
+	background:linear-gradient(45deg,pink,palegreen,orangered);
+	color:mediumvioletred;
+	display: flex;
+	margin-top:20px ;
+	padding: 20px;
+	font-size: 25px;
+}
+#four
+{
+	background-color:burlywood;
+	color:brown;
+	display:flex;
+	margin-top:20px ;
+	padding: 20px;
+	font-size: 25px;
+}
+#five
+{
+	background-color:cyan;
+	
+	margin-top:20px ;
+	padding: 20px;
+	font-size: 25px;
+	
+
+}
+#six
+{
+	background-color:chocolate;
+	margin-top:20px ;
+	padding: 20px;
+	font-size: 25px;
+	color: white;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Equiliser</title>
+	<style>
+		body
+		{
+			background-color: black;
+		}
+		div
+		{
+			position:relative;
+			top:300px;
+			left:300px;
+		}
+		div>span
+		{
+			background-color: black;
+			display: inline-block;
+			width:3px;
+			height: 120px;
+			margin: 20px;
+			border-radius: 100%;
+			box-shadow: 0 -10px 5px white;
+			animation: eq 1s linear 0s infinite normal;
+
+		}
+		div>span:first-child
+		{
+			background-color:red;
+			animation-delay:0.1s;
+
+		}
+		div>span:nth-child(2)
+		{
+			background-color:blue;
+			animation-delay:0.2s;	
+			
+		}
+		div>span:nth-child(3)
+		{
+			background-color:green;
+			animation-delay:0.3s;
+			
+		}
+		div>span:nth-child(4)
+		{
+			background-color:yellow;
+			animation-delay:0.3s;
+			
+		}
+		div>span:nth-child(5)
+		{
+			background-color:deeppink;
+			animation-delay:0.1s;
+			
+		}
+		div>span:nth-child(6)
+		{
+			background-color:orange;
+			animation-delay:0.1s;
+			
+		}
+		div>span:nth-child(7)
+		{
+			background-color:red;
+			animation-delay:0.1s;
+
+		}
+		div>span:nth-child(8)
+		{
+			background-color:blue;
+			animation-delay:0.2s;
+			
+			
+			
+		}
+		div>span:nth-child(9)
+		{
+			background-color:green;
+			animation-delay:0.3s;
+			
+		}
+		div>span:nth-child(10)
+		{
+			background-color:yellow;
+			animation-delay:0.3s;
+			
+		}
+		div>span:nth-child(11)
+		{
+			background-color:deeppink;
+			animation-delay:0.1s;
+			
+		}
+		div>span:last-child
+		{
+			background-color:orange;
+			animation-delay:0.1s;
+			
+		}
+		@keyframes eq
+		{
+			0%,100%
+			{
+				transform:scale(0,0.4);
+			}
+			50%
+			{
+				transform:scale(1,1.2);
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+
+</body>
+</html>

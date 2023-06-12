@@ -1,0 +1,138 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Resume</title>
+	<link rel="stylesheet" href="{% static 'css/resumstyles.css' %}">
+
+</head>
+<body>
+	<aside>
+		
+		<img src="{% static 'images/IMG_2536.JPG' %}">
+		<a href="#one">Career Objective</a>
+		<a href="#two">Education</a>
+		<a href="#three">Strengths</a>
+		<a href="#four">Hobbies</a>
+		<a href="#five">Projects</a>
+		<a href="#six">Personal Information</a>
+
+	</aside>
+	<div id="one">
+		<h2>Career Objective:</h2>
+		
+		<p>To learn and function effectively in an organization where I would be able to utilize my capabilities to deliver the bottom line and, in the process, add value to the organization and my career.</p>
+		
+	</div>
+	<div id="two"><h2>Education:</h2>
+		<table border="1px" cellpadding="30px" cellspacing="20px">
+			<thead>
+				<tr>
+					<th>Qualification</th>
+					<th>Name of the Institute</th>
+					<th>Percentage</th>
+					<th>Year Of Passing</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>SSC</td>
+					<td>Sri Guru Raja E.M High School</td>
+					<td>87%</td>
+					<td>2015</td>
+				</tr>
+				<tr>
+					<td>Intermediate</td>
+					<td>Narayana Junior College</td>
+					<td>90%</td>
+					<td>2017</td>
+				</tr>
+				<tr>
+					<td>Bsc(MECS)</td>
+					<td>National Degree College</td>
+					<td>87%</td>
+					<td>2020</td>
+				</tr>
+				<tr>
+					<td>MCA</td>
+					<td>Prabhath Institute Of Computer Sciences</td>
+					<td>75%</td>
+					<td>2022</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div id="three">
+		<ol><h2>Strengths:</h2>
+			<li>Time Management</li>
+			<li>Quick Learner</li>
+			<li>Problem Solving</li>
+			<li>Leadership</li>
+			<li>Creativity</li>
+		</ol>
+	</div>
+	<div id="four">
+		<ol><h2>Hobbies:</h2>
+			<li>Playing Cricket</li>
+			<li>Watching Movies</li>
+			<li>Painting</li>
+			<li>Reading Books</li>
+			
+		</ol>
+	</div>
+	<div id="five">
+		<h2>Project:</h2>
+		<h3>Project Name:Book Shop  Management System</h3>
+		<p>The purpose of the software is to manage the books in the bookshop.Generally it includes the stock management and account management.We develop the software to maintain records of sales , purchase ,customer , stock , books , supplier and employee record.This project developed using D2k as Front end and oracle server as back end.</p>
+	</div>
+	<div id="six">
+		<form>
+		<fieldset>
+			<legend>Personal Information</legend>
+			<table>
+				<tbody>
+					<tr>
+						<td>First Name:</td>
+						<td>Sudheer</td>
+						<td>Middle Name:</td>
+						<td>Kumar</td>
+						<td>Last Name:</td>
+						<td>Sanika</td>
+					</tr>
+					<tr>
+						<td>Father's Name:</td>
+						<td>S.Pullaiah</td>
+						<td>Mother's Name:</td>
+						<td>S.Varalakshmi</td>
+					</tr>
+					<tr>
+						<td>Permanent Address:</td>
+						<td>Hno:1-46a,S.C.Colony,Balapanur,Kurnool,Andhra Pradesh,Pincode-518112</td>
+					</tr>
+					<tr></tr>
+					<tr>
+						<td>Mobile Number:</td>
+						<td>6303784085</td>
+					</tr>
+					<tr>
+						<td>Date of Birth:</td>
+						<td>09-Oct-1999</td>	
+					</tr>
+					<tr>
+						<td>Gender:</td>
+						<td>Male</td>		
+					</tr>	
+					<tr>
+						<td colspan="2">Languages Known:</td>
+						<td><input type="checkbox" value="Telugu">Telugu</td>
+						<td><input type="checkbox" value="Hindi">Hindi</td>
+						<td><input type="checkbox" value="English">English</td>
+					</tr>
+				</tbody>
+			</table>
+		</fieldset>
+		</form>
+	</div>
+
+</body>
+</html>

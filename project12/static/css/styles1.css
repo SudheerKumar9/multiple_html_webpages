@@ -1,0 +1,16 @@
+.landing-page
+{
+	background:black url("bgimg.jpg") no-repeat 0px 0px scroll;
+	background-size:cover;
+	height:100vh;
+}
+.landing-page>.wrapper
+{
+	background: rgba(0, 0, 0, 0.4);
+}
+.card-body:hover
+{
+	transform:scale(1.2,1.3);
+	cursor: pointer;
+	transition: all 1s linear 1s;
+}
